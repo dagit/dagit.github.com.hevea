@@ -1,5 +1,1 @@
-hevea -fix hello
-latex hello.image.tex
-dvisvgm -p 1-2 -o %f-%p.svg -n hello.image.dvi  # the 1-2 needs to be the number of figures
-vim hello.html # fix up refs
-
+make hello.html
