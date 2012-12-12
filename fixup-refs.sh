@@ -5,9 +5,9 @@ DOC=${1}
 DOC_BASENAME=$(basename -s .html ${DOC})
 
 NUM_DIGITS=$(dvisvgm -p 1- -o %f-%p.svg -n "${DOC_BASENAME}.image.dvi" 2>&1 \
-					  | tee "${DOC_BASENAME}.image.dvisvgm.log" 2>&1                  \
-						| grep -E "${PAGES_PATTERN}"                                    \
-						| sed -Ee "s/${PAGES_PATTERN}/\1/" | tr -d '\n' | wc -c)
+            | tee "${DOC_BASENAME}.image.dvisvgm.log" 2>&1                  \
+            | grep -E "${PAGES_PATTERN}"                                    \
+            | sed -Ee "s/${PAGES_PATTERN}/\1/" | tr -d '\n' | wc -c)
 # This strips any leading spaces from the above command
 NUM_DIGITS=$(echo -n ${NUM_DIGITS})
 
