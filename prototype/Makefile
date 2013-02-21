@@ -4,6 +4,6 @@
 	latex $*.image
 	latex $*.image
 	./fixup-refs.sh $@
-#	pdflatex $*
-#	pdflatex $*
+	pdflatex $*
+	pdflatex $*
 
