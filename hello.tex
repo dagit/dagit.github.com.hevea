@@ -1,7 +1,13 @@
 \documentclass{article}
-%HEVEA\loadcssfile{http://octopress.org/stylesheets/screen.css}
-%HEVEA\externalcsstrue
+\usepackage{hevea}
+\begin{htmlonly}%
+\loadcssfile{bootstrap/css/bootstrap.css}
+\loadcssfile{bootstrap/css/bootstrap-responsive.css}
+\externalcsstrue
+\end{htmlonly}
+
 \begin{document}
+
 \newcommand{\mymath}[1]{%
 %HEVEA\begin{center}
 %HEVEA\begin{toimage}
@@ -17,5 +23,32 @@ Hello World
 
 \mymath{\left(\, \sum_{k=1}^n a_k b_k \right)^2 \le \left(\, \sum_{k=1}^n a_k^2 \right) \left(\, \sum_{k=1}^n b_k^2 \right)}
 
+\section{My Blog!}
 
+I has the best blog.
+
+\section{Fin}
+
+\subsection{The end}
+
+\begin{htmlonly}%
+\begin{rawhtml}
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/css/js/jquery.js"></script>
+    <script src="bootstrap/css/js/bootstrap-transition.js"></script>
+    <script src="bootstrap/css/js/bootstrap-alert.js"></script>
+    <script src="bootstrap/css/js/bootstrap-modal.js"></script>
+    <script src="bootstrap/css/js/bootstrap-dropdown.js"></script>
+    <script src="bootstrap/css/js/bootstrap-scrollspy.js"></script>
+    <script src="bootstrap/css/js/bootstrap-tab.js"></script>
+    <script src="bootstrap/css/js/bootstrap-tooltip.js"></script>
+    <script src="bootstrap/css/js/bootstrap-popover.js"></script>
+    <script src="bootstrap/css/js/bootstrap-button.js"></script>
+    <script src="bootstrap/css/js/bootstrap-collapse.js"></script>
+    <script src="bootstrap/css/js/bootstrap-carousel.js"></script>
+    <script src="bootstrap/css/js/bootstrap-typeahead.js"></script>
+\end{rawhtml}
+\end{htmlonly}
 \end{document}
